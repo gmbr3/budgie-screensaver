@@ -5,6 +5,7 @@ AC_INIT([gnome-screensaver],
         [3.6.1],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-screensaver])
 
+AC_CONFIG_MACRO_DIRS([m4])
 AC_CONFIG_SRCDIR(src/gnome-screensaver.c)
 
 AM_INIT_AUTOMAKE([1.10 no-dist-gzip dist-xz tar-ustar])
@@ -33,7 +34,7 @@ GETTEXT_PACKAGE=gnome-screensaver
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of default gettext domain])
 
-AM_GLIB_GNU_GETTEXT
+AM_GNU_GETTEXT([external])
 GLIB_GSETTINGS
 
 # Dependencies
@@ -91,7 +92,6 @@ SAVER_LIBS="$ALL_X_LIBS"
 
 AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 
-GNOME_COMPILE_WARNINGS(yes)
 
 # Optional dependencies for the theme engines
 
