@@ -92,7 +92,7 @@ SAVER_LIBS="$ALL_X_LIBS"
 
 AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 
-GNOME_COMPILE_WARNINGS(yes)
+AX_COMPILER_FLAGS(yes)
 
 # Optional dependencies for the theme engines
 
