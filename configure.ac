@@ -5,6 +5,7 @@ AC_INIT([gnome-screensaver],
         [3.6.1],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-screensaver])
 
+AC_CONFIG_MACRO_DIRS([m4])
 AC_CONFIG_SRCDIR(src/gnome-screensaver.c)
 
 AM_INIT_AUTOMAKE([1.10 no-dist-gzip dist-xz tar-ustar])
