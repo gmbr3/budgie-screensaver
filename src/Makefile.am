@@ -51,7 +51,6 @@ noinst_PROGRAMS = 	\
 desktopdir = $(datadir)/applications
 desktop_in_files = gnome-screensaver.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
 
 gnome_screensaver_command_SOURCES = 	\
 	gnome-screensaver-command.c	\
