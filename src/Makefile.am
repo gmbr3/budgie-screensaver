@@ -205,7 +205,7 @@ EXTRA_DIST =				\
 
 CLEANFILES = 				\
 	$(desktop_DATA) 		\
-	gnome-screensaver.desktop.in	\
+	gnome-screensaver.desktop	\
 	$(BUILT_SOURCES)
 
 MAINTAINERCLEANFILES =			\
