@@ -5,7 +5,6 @@ man_MANS = 				\
 	gnome-screensaver-command.1	\
 	$(NULL)
 
-@INTLTOOL_XML_NOMERGE_RULE@
 
 dbussessionservicedir = $(DBUS_SESSION_SERVICE_DIR)
 dbussessionservice_DATA = org.gnome.ScreenSaver.service
