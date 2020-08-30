@@ -161,6 +161,9 @@ gs-marshal.c: gs-marshal.list
 
 gs-marshal.h: gs-marshal.list
 	@GLIB_GENMARSHAL@ $< --prefix=gs_marshal --header > $@
+	
+gnome-screensaver.desktop: gnome-screensaver.desktop.in
+    $(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 gnome_screensaver_SOURCES =	\
 	gnome-screensaver.c	\
