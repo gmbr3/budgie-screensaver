@@ -5,7 +5,7 @@ NULL =
 
 saverdir = $(libexecdir)/gnome-screensaver
 
-INCLUDES =							\
+AM_CPPFLAGS =							\
 	-I.							\
 	-I$(srcdir)						\
 	$(GNOME_SCREENSAVER_CFLAGS)				\
