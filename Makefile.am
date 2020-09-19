@@ -53,3 +53,4 @@ MAINTAINERCLEANFILES =		\
 
 
 -include $(top_srcdir)/git.mk
+ACLOCAL_AMFLAGS = -I m4
